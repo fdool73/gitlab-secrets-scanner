@@ -21,7 +21,7 @@ from rich import print as rprint
 
 class GitLabSecretsScanner:
     def __init__(self, output_dir="./results", include_subgroups=True, group=None):
-        self.base_url = os.getenv('GITLAB_URL', 'https://git.hq.bill.com')
+        self.base_url = os.getenv('GITLAB_URL', 'https://gitlab.com')
         self.token = os.getenv('GITLAB_TOKEN')
         
         if not self.token:
